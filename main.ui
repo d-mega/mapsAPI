@@ -6,70 +6,57 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>600</height>
+    <width>1015</width>
+    <height>764</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(239, 255, 246);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="mapp">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>580</width>
-      <height>431</height>
+      <x>70</x>
+      <y>30</y>
+      <width>871</width>
+      <height>551</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="scale">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>530</y>
-      <width>141</width>
+      <x>670</x>
+      <y>670</y>
+      <width>191</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Nirmala UI Semilight</family>
       <pointsize>14</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Масштаб:</string>
+     <string>Масштаб: 0</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QPushButton" name="map_type">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>530</y>
-      <width>141</width>
+      <x>670</x>
+      <y>720</y>
+      <width>321</width>
       <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>570</y>
-      <width>291</width>
-      <height>28</height>
      </rect>
     </property>
     <property name="font">
@@ -81,23 +68,23 @@
      <string>Тип карты: Схема</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="search_box">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>520</y>
-      <width>161</width>
-      <height>71</height>
+      <x>20</x>
+      <y>700</y>
+      <width>511</width>
+      <height>51</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="search_map">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>520</y>
-      <width>93</width>
-      <height>71</height>
+      <x>540</x>
+      <y>700</y>
+      <width>121</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -109,22 +96,23 @@
      <string>Искать</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="coord">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>450</y>
-      <width>581</width>
-      <height>61</height>
+      <x>670</x>
+      <y>630</y>
+      <width>191</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <family>Nirmala UI Semilight</family>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Здесь можно вывести адрес</string>
+     <string>Координаты: 0;0</string>
     </property>
    </widget>
   </widget>
