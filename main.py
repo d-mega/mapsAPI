@@ -7,8 +7,6 @@ from PyQt5 import uic
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
 
-SCREEN_SIZE = [600, 450]
-
 
 class MyWidget(QMainWindow):
     def __init__(self):
@@ -16,14 +14,17 @@ class MyWidget(QMainWindow):
         uic.loadUi('main.ui', self)
         self.pushButton.clicked.connect(self.run)
         self.getImage(self.createurl())
-        self.initUI()
+        self.print_img(self.map_file)
+
+    def run(self):
+        print(1)
 
     def print_img(self, pic_name):
         self.pixmap = QPixmap(pic_name)
         self.label.setPixmap(self.pixmap)
 
     def initUI(self):
-        self.setGeometry(100, 100, *SCREEN_SIZE)
+        # self.setGeometry(100, 100, *SCREEN_SIZE)
         self.setWindowTitle('Отображение карты')
 
         ## Изображение
