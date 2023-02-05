@@ -12,9 +12,12 @@ class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('main.ui', self)
-        self.pushButton.clicked.connect(self.run)
         self.getImage(self.createurl())
         self.print_img(self.map_file)
+
+    def print_img(self, name):
+        self.pixmap = QPixmap(name)
+        self.label.setPixmap(self.pixmap)
 
     def run(self):
         print(1)
