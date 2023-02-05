@@ -4,7 +4,8 @@ import sys
 import requests
 
 from PyQt5 import uic
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtGui import QPixmap
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
 
 SCREEN_SIZE = [600, 450]
 
@@ -17,8 +18,9 @@ class MyWidget(QMainWindow):
         self.getImage(self.createurl())
         self.initUI()
 
-    def run(self):
-        self.label.setText("OK")
+    def print_img(self, pic_name):
+        self.pixmap = QPixmap(pic_name)
+        self.label.setPixmap(self.pixmap)
 
     def initUI(self):
         self.setGeometry(100, 100, *SCREEN_SIZE)
