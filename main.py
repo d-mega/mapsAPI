@@ -17,7 +17,7 @@ class MyWidget(QMainWindow):
 
     def print_img(self, name):
         self.pixmap = QPixmap(name)
-        self.label.setPixmap(self.pixmap)
+        self.mapp.setPixmap(self.pixmap)
 
     def run(self):
         print(1)
