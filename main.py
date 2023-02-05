@@ -1,7 +1,8 @@
 import sys
 
 from PyQt5 import uic
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtGui import QPixmap
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
 
 
 class MyWidget(QMainWindow):
@@ -10,8 +11,9 @@ class MyWidget(QMainWindow):
         uic.loadUi('main.ui', self)
         self.pushButton.clicked.connect(self.run)
 
-    def run(self):
-        self.label.setText("OK")
+    def print_img(self, pic_name):
+        self.pixmap = QPixmap(pic_name)
+        self.label.setPixmap(self.pixmap)
 
 
 if __name__ == '__main__':
